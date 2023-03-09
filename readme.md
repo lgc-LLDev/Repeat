@@ -8,7 +8,7 @@
 
 ## 效果图
 
-![1](readme/1673947551735.gif)
+![1](https://raw.githubusercontent.com/lgc-LLSEDev/readme/main/Repeat/1673947551735.gif)
 
 ## 安装
 

@@ -1,5 +1,5 @@
 // LiteLoaderScript Dev Helper
-/// <reference path="d:\Coding\LLSEAids/dts/llaids/src/index.d.ts"/>
+/// <reference path="../HelperLib/src/index.d.ts"/>
 /* eslint-disable no-await-in-loop */
 /* global ll mc File */
 

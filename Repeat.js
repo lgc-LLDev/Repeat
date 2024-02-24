@@ -1,9 +1,10 @@
 // LiteLoaderScript Dev Helper
 /// <reference path="../HelperLib/src/index.d.ts"/>
 /* eslint-disable no-await-in-loop */
-/* global ll mc File */
+/* global ll mc file */
 
 const PLUGIN_NAME = 'Repeat';
+/** @type {[number, number, number]} */
 const PLUGIN_VERSION = [0, 1, 1];
 
 const PLUGIN_DATA_PATH = `plugins/${PLUGIN_NAME}`;
@@ -21,13 +22,15 @@ let pluginConfig = {
 let latestMsg = '';
 
 function updateConfig() {
-  File.writeTo(PLUGIN_CONFIG_PATH, JSON.stringify(pluginConfig, null, 2));
+  file.writeTo(PLUGIN_CONFIG_PATH, JSON.stringify(pluginConfig, null, 2));
 }
 
 function loadConfig() {
-  if (File.exists(PLUGIN_CONFIG_PATH))
-    pluginConfig = JSON.parse(File.readFrom(PLUGIN_CONFIG_PATH));
-  else updateConfig();
+  if (file.exists(PLUGIN_CONFIG_PATH)) {
+    const res = file.readFrom(PLUGIN_CONFIG_PATH);
+    if (res) pluginConfig = JSON.parse(res);
+  }
+  updateConfig();
 }
 
 loadConfig();

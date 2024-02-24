@@ -12,7 +12,9 @@
 
 ## 安装
 
-将 `Repeat.js` 放入 `plugins` 目录即可
+```bash
+lip install github.com/lgc-LLDev/Repeat
+```
 
 ## 配置
 

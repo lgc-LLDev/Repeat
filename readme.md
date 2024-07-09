@@ -25,7 +25,7 @@ lip install github.com/lgc-LLDev/Repeat
 ```jsonc
 {
   // 触发 +1 功能的关键词
-  "keywords": ["+1"]
+  "keywords": ["+1"],
 }
 ```
 
